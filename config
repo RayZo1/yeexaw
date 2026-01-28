@@ -18,7 +18,7 @@ shared.Saved = {
         ['Hit Part'] = 'Closest Point',
         ['Closest Point'] = {
             ['Type'] = 'Advanced',
-            ['Scale'] = 0.999
+            ['Scale'] = 0.899
         },
         ['Prediction'] = {
             ['X'] = 0,
@@ -28,9 +28,9 @@ shared.Saved = {
         ['FOV'] = {
             ['Enabled'] = true,
             ['Size'] = {
-                ['X'] = 0,
-                ['Y'] = 0,
-                ['Z'] = 0
+                ['X'] = 5,
+                ['Y'] = 5,
+                ['Z'] = 5
             },
             ['Weapon Configuration'] = {
                 ['Enabled'] = true,
