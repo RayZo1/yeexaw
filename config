@@ -3,7 +3,7 @@ shared.Saved = {
         ['Whilst a player is selected'] = {
             ['Knock Check'] = true,
             ['Self Knocked'] = true,
-            ['Visible'] = true,
+            ['Visible'] = false,
         },
         ['Whilst selecting a player'] = {
             ['Knock Check'] = true,
@@ -54,8 +54,8 @@ shared.Saved = {
     },
     ['Camera Aimbot'] = {
         ['Enabled'] = true,
-        ['Hit Part'] = 'Closest Point',
-        ['Snappiness'] = 0.099,
+        ['Hit Part'] = 'Closest Part',
+        ['Snappiness'] = 0.2,
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
@@ -63,8 +63,8 @@ shared.Saved = {
         },
         ['Camera Aimbot Checks'] = {
             ['First Person'] = true,
-            ['Third Person'] = false,
-            ['Right Click'] = true,
+            ['Third Person'] = true,
+            ['Right Click'] = false,
         },
         ['FOV'] = {
             ['Enabled'] = true,
