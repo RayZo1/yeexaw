@@ -3,7 +3,7 @@ shared.Saved = {
         ['Whilst a player is selected'] = {
             ['Knock Check'] = true,
             ['Self Knocked'] = true,
-            ['Visible'] = false,
+            ['Visible'] = true,
         },
         ['Whilst selecting a player'] = {
             ['Knock Check'] = true,
@@ -18,7 +18,7 @@ shared.Saved = {
         ['Hit Part'] = 'Closest Point',
         ['Closest Point'] = {
             ['Type'] = 'Advanced',
-            ['Scale'] = 0.9
+            ['Scale'] = 0.999
         },
         ['Prediction'] = {
             ['X'] = 0,
@@ -26,26 +26,26 @@ shared.Saved = {
             ['Z'] = 0
         },
         ['FOV'] = {
-            ['Enabled'] = false,
+            ['Enabled'] = true,
             ['Size'] = {
-                ['X'] = 50,
-                ['Y'] = 50,
-                ['Z'] = 50
+                ['X'] = 4,
+                ['Y'] = 2,
+                ['Z'] = 4
             },
             ['Weapon Configuration'] = {
                 ['Enabled'] = true,
                 ['Shotguns'] = {
-                    ['X'] = 5,
+                    ['X'] = 4,
                     ['Y'] = 2,
                     ['Z'] = 4
                 },
                 ['Pistols'] = {
-                    ['X'] = 5,
+                    ['X'] = 3,
                     ['Y'] = 2,
                     ['Z'] = 1
                 },
                 ['Others'] = {
-                    ['X'] = 5,
+                    ['X'] = 3,
                     ['Y'] = 2,
                     ['Z'] = 1
                 }
@@ -54,7 +54,7 @@ shared.Saved = {
     },
     ['Camera Aimbot'] = {
         ['Enabled'] = true,
-        ['Hit Part'] = 'Head',
+        ['Hit Part'] = 'Closest Part',
         ['Snappiness'] = 1,
         ['Prediction'] = {
             ['X'] = 0,
@@ -62,19 +62,19 @@ shared.Saved = {
             ['Z'] = 0
         },
         ['Camera Aimbot Checks'] = {
-            ['First Person'] = false,
+            ['First Person'] = true,
             ['Third Person'] = false,
-            ['Right Click'] = false,
+            ['Right Click'] = true,
         },
         ['FOV'] = {
             ['Enabled'] = true,
             ['Size'] = {
-                ['X'] = 150,
-                ['Y'] = 150,
-                ['Z'] = 150
+                ['X'] = 2,
+                ['Y'] = 2,
+                ['Z'] = 2
             },
             ['Weapon Configuration'] = {
-                ['Enabled'] = false,
+                ['Enabled'] = true,
                 ['Shotguns'] = {
                     ['X'] = 15,
                     ['Y'] = 9,
@@ -95,7 +95,7 @@ shared.Saved = {
     },
     ['Trigger Bot'] = {
         ['Enabled'] = true,
-        ['Click Cooldown'] = 0.3,
+        ['Click Cooldown'] = 0,
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
@@ -157,5 +157,3 @@ shared.Saved = {
         }
     },
 }
-script_key="updFlQCwzasjaTySutLKDpSprmeBtZof";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/dee5ed4cbc77b6a7779286b080002da0.lua"))()
