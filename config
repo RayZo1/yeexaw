@@ -157,10 +157,5 @@ shared.Saved = {
         }
     },
 }
-
-
-shared.XD = shared.XD or {}
-if shared.XD.Loaded then return end
-shared.XD.Loaded = true
 script_key = "updFlQCwzasjaTySutLKDpSprmeBtZof"
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/dee5ed4cbc77b6a7779286b080002da0.lua"))()
