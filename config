@@ -54,7 +54,7 @@ shared.Saved = {
     },
     ['Camera Aimbot'] = {
         ['Enabled'] = true,
-        ['Hit Part'] = 'Closest Part',
+        ['Hit Part'] = 'Head',
         ['Snappiness'] = 1,
         ['Prediction'] = {
             ['X'] = 0,
@@ -62,9 +62,9 @@ shared.Saved = {
             ['Z'] = 0
         },
         ['Camera Aimbot Checks'] = {
-            ['First Person'] = true,
+            ['First Person'] = false,
             ['Third Person'] = false,
-            ['Right Click'] = true,
+            ['Right Click'] = false,
         },
         ['FOV'] = {
             ['Enabled'] = true,
@@ -95,7 +95,7 @@ shared.Saved = {
     },
     ['Trigger Bot'] = {
         ['Enabled'] = true,
-        ['Click Cooldown'] = 0,
+        ['Click Cooldown'] = 0.4,
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
