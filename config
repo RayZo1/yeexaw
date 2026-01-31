@@ -18,7 +18,7 @@ shared.Saved = {
         ['Hit Part'] = 'Closest Point',
         ['Closest Point'] = {
             ['Type'] = 'Advanced',
-            ['Scale'] = 0.5
+            ['Scale'] = 0.999
         },
         ['Prediction'] = {
             ['X'] = 0,
@@ -28,20 +28,20 @@ shared.Saved = {
         ['FOV'] = {
             ['Enabled'] = true,
             ['Size'] = {
-                ['X'] = 4,
-                ['Y'] = 2,
-                ['Z'] = 4
+                ['X'] = 0,
+                ['Y'] = 0,
+                ['Z'] = 0
             },
             ['Weapon Configuration'] = {
                 ['Enabled'] = true,
                 ['Shotguns'] = {
-                    ['X'] = 4,
-                    ['Y'] = 2,
+                    ['X'] = 3,
+                    ['Y'] = 1.8,
                     ['Z'] = 4
                 },
                 ['Pistols'] = {
-                    ['X'] = 3,
-                    ['Y'] = 2,
+                    ['X'] = 2,
+                    ['Y'] = 1.9,
                     ['Z'] = 1
                 },
                 ['Others'] = {
@@ -54,27 +54,27 @@ shared.Saved = {
     },
     ['Camera Aimbot'] = {
         ['Enabled'] = true,
-        ['Hit Part'] = 'Head',
-        ['Snappiness'] = 1,
+        ['Hit Part'] = 'Closest Point',
+        ['Snappiness'] = 0.099,
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
             ['Z'] = 0
         },
         ['Camera Aimbot Checks'] = {
-            ['First Person'] = false,
+            ['First Person'] = true,
             ['Third Person'] = false,
-            ['Right Click'] = false,
+            ['Right Click'] = true,
         },
         ['FOV'] = {
             ['Enabled'] = true,
             ['Size'] = {
-                ['X'] = 50,
-                ['Y'] = 50,
-                ['Z'] = 50
+                ['X'] = 2,
+                ['Y'] = 2,
+                ['Z'] = 2
             },
             ['Weapon Configuration'] = {
-                ['Enabled'] = false,
+                ['Enabled'] = true,
                 ['Shotguns'] = {
                     ['X'] = 15,
                     ['Y'] = 9,
@@ -95,7 +95,7 @@ shared.Saved = {
     },
     ['Trigger Bot'] = {
         ['Enabled'] = true,
-        ['Click Cooldown'] = 0.4,
+        ['Click Cooldown'] = 0,
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
