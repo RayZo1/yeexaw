@@ -12,7 +12,7 @@ shared.Saved = {
         },
     },
     ['Toggle'] = 'C',
-    ['Mode'] = 'Auto',
+    ['Mode'] = 'Toggle',
     ['Silent Aim'] = {
         ['Enabled'] = true,
         ['Hit Part'] = 'Closest Point',
