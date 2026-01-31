@@ -18,7 +18,7 @@ shared.Saved = {
         ['Hit Part'] = 'Closest Point',
         ['Closest Point'] = {
             ['Type'] = 'Advanced',
-            ['Scale'] = 0.899
+            ['Scale'] = 0.9
         },
         ['Prediction'] = {
             ['X'] = 0,
@@ -26,26 +26,26 @@ shared.Saved = {
             ['Z'] = 0
         },
         ['FOV'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
             ['Size'] = {
                 ['X'] = 50,
                 ['Y'] = 50,
                 ['Z'] = 50
             },
             ['Weapon Configuration'] = {
-                ['Enabled'] = false,
+                ['Enabled'] = true,
                 ['Shotguns'] = {
-                    ['X'] = 3,
-                    ['Y'] = 1.8,
+                    ['X'] = 5,
+                    ['Y'] = 2,
                     ['Z'] = 4
                 },
                 ['Pistols'] = {
-                    ['X'] = 2,
-                    ['Y'] = 1.9,
+                    ['X'] = 5,
+                    ['Y'] = 2,
                     ['Z'] = 1
                 },
                 ['Others'] = {
-                    ['X'] = 3,
+                    ['X'] = 5,
                     ['Y'] = 2,
                     ['Z'] = 1
                 }
@@ -95,7 +95,7 @@ shared.Saved = {
     },
     ['Trigger Bot'] = {
         ['Enabled'] = true,
-        ['Click Cooldown'] = 3,
+        ['Click Cooldown'] = 0.3,
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
