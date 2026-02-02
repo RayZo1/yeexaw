@@ -1,161 +1,161 @@
 shared.Saved = {
     ['Conditions'] = {
         ['Whilst a player is selected'] = {
-            ['Knock Check'] = true,
-            ['Self Knocked'] = true,
+            ['Knocked'] = true,
+            ['SelfKnocked'] = true,
             ['Visible'] = true,
         },
-        ['Whilst selecting a player'] = {
-            ['Knock Check'] = true,
-            ['Self Knocked'] = true,
-            ['Visible'] = true,
+        ['When selecting a player'] = {
+            ['Knocked'] = true,
+            ['SelfKnocked'] = true,
+            ['Visible'] = false,
+        },
+        ['Options'] = {
+            ['Keybind'] = 'C',
+            ['Mode'] = 'Auto',
         },
     },
-    ['Toggle'] = 'C',
-    ['Mode'] = 'Toggle',
-    ['Silent Aim'] = {
+    ['Silent Aimbot'] = {
         ['Enabled'] = true,
         ['Hit Part'] = 'Closest Point',
+        ['Prediction'] = { X = 0, Y = 0, Z = 0 },
         ['Closest Point'] = {
-            ['Type'] = 'Advanced',
-            ['Scale'] = 0.999
+            ['Mode'] = 'Advanced',
+            ['Point Scale'] = 0.999,
         },
-        ['Prediction'] = {
-            ['X'] = 0,
-            ['Y'] = 0,
-            ['Z'] = 0
+        ['Anti Curve'] = {
+            ['Enabled'] = true,
+            ['Angle'] = 0.005,
+            ['Weapon Configuration'] = {
+                ['Enabled'] = true,
+                ['Shotguns'] = { Angle = 0.015 },
+                ['Pistols'] = { Angle = 0.015 },
+                ['Others'] = { Angle = 0.015 },
+            },
         },
         ['FOV'] = {
             ['Enabled'] = true,
-            ['Size'] = {
-                ['X'] = 0,
-                ['Y'] = 0,
-                ['Z'] = 0
-            },
+            ['Size'] = 180,
+            ['UseScreenSpace'] = true,
             ['Weapon Configuration'] = {
                 ['Enabled'] = true,
-                ['Shotguns'] = {
-                    ['X'] = 3,
-                    ['Y'] = 1.8,
-                    ['Z'] = 4
-                },
-                ['Pistols'] = {
-                    ['X'] = 2,
-                    ['Y'] = 1.9,
-                    ['Z'] = 1
-                },
-                ['Others'] = {
-                    ['X'] = 3,
-                    ['Y'] = 2,
-                    ['Z'] = 1
-                }
-            }
-        }
+                ['Shotguns'] = { ['X'] = 1, ['Y'] = 1, ['Z'] = 1 },
+                ['Pistols'] = { ['X'] = 1, ['Y'] = 1, ['Z'] = 1 },
+                ['Others'] = { ['X'] = 1, ['Y'] = 1, ['Z'] = 1 }
+            },
+        },
+    },
+    ['Client Redirection'] = {
+        ['Enabled'] = true,
+        ['Weapons'] = { '[Revolver]', '[Glock]' },
     },
     ['Camera Aimbot'] = {
         ['Enabled'] = true,
         ['Hit Part'] = 'Closest Point',
-        ['Snappiness'] = 0.03,
-        ['Prediction'] = {
-            ['X'] = 0,
-            ['Y'] = 0,
-            ['Z'] = 0
+        ['Snappiness'] = 0.0125,
+        ['Activation'] = {
+            ['Activation Mode'] = 'Hold',
+            ['Activation Bind'] = 'V',
         },
-        ['Camera Aimbot Checks'] = {
-            ['First Person'] = true,
+        ['Prediction'] = { X = 0, Y = 0, Z = 0 },
+        ['Camera Modes'] = {
+            ['ShiftLocked'] = true,
             ['Third Person'] = false,
-            ['Right Click'] = true,
+            ['First Person'] = true,
         },
         ['FOV'] = {
-            ['Enabled'] = true,
-            ['Size'] = {
-                ['X'] = 2,
-                ['Y'] = 2,
-                ['Z'] = 2
-            },
+            ['Size'] = { X = 13, Y = 13, Z = 13 },
             ['Weapon Configuration'] = {
-                ['Enabled'] = true,
-                ['Shotguns'] = {
-                    ['X'] = 15,
-                    ['Y'] = 9,
-                    ['Z'] = 15
-                },
-                ['Pistols'] = {
-                    ['X'] = 15,
-                    ['Y'] = 8,
-                    ['Z'] = 15
-                },
-                ['Others'] = {
-                    ['X'] = 15,
-                    ['Y'] = 8,
-                    ['Z'] = 15
-                }
-            }
-        }
+                ['Enabled'] = false,
+                ['Shotguns'] = { X = 13, Y = 13, Z = 13 },
+                ['Pistols'] = { X = 13, Y = 13, Z = 13 },
+                ['Others'] = { X = 13, Y = 13, Z = 13 },
+            },
+        },
     },
     ['Trigger Bot'] = {
         ['Enabled'] = true,
-        ['Click Cooldown'] = 0,
-        ['Prediction'] = {
-            ['X'] = 0,
-            ['Y'] = 0,
-            ['Z'] = 0
-        },
+        ['Detection'] = 'Hitbox',
         ['Activation'] = {
             ['Activation Mode'] = 'Hold',
-            ['Activation Bind'] = 'V'
+            ['Activation Bind'] = 'V',
         },
+        ['Click Cooldown'] = 0,
+        ['Weapons'] = {
+            ['Use Selection'] = false,
+            '[Double-Barrel SG]',
+            '[Revolver]',
+            '[TacticalShotgun]',
+        },
+        ['Prediction'] = { X = 0, Y = 0, Z = 0 },
         ['FOV'] = {
-            ['X'] = 3.4,
-            ['Y'] = 4.8,
-            ['Z'] = 2.2
-        }
+            ['Enabled'] = true,
+            ['Size'] = { X = 2.3, Y = 4.8, Z = 2.1 },
+        },
+    },
+    ['Target Lock'] = {
+        ['Enabled'] = true,
+        ['Keybind'] = 'X',
+        ['HitPart'] = 'Head',
     },
     ['Weapon Modifications'] = {
-        ['Enabled'] = true,
-        ['[Double-Barrel SG]'] = {
-            ['Multiplier'] = 0.88
-        },
-        ['[TacticalShotgun]'] = {
-            ['Multiplier'] = 0.88
-        },
-        ['[Shotgun]'] = {
-            ['Multiplier'] = 0.88
-        },
-        ['[DrumShotgun]'] = {
-            ['Multiplier'] = 0.77
-        },
-    },
-    ['Speed Modifiers'] = {
-        ['Enabled'] = false,
-        ['Multiplier Mode'] = 'Multiply',
-        ['Normal'] = {
-            ['Multiplier'] = 1.09,
-        },
-        ['Shooting'] = {
-            ['Multiplier'] = 1.09,
-        },
-        ['Reloading'] = {
-            ['Multiplier'] = 1.09,
-        },
-    },
-    ['Anti Curve'] = {
-        ['Enabled'] = true,
-        -- Default max angle (degrees)
-        ['Angle'] = 0.005,
-        ['Weapon Configuration'] = {
+        ['Spread Modifications'] = {
             ['Enabled'] = true,
-            ['Shotguns'] = {
-                ['Angle'] = 0.015
+            ['Toggle'] = true,
+            ['Bind'] = 'J',
+            ['Compatibility'] = 'normal',
+            ['Double-Barrel SG'] = { Multiplier = 0.8, Random = { Min = 0.7, Max = 0.9 } },
+            ['TacticalShotgun'] = { Multiplier = 0.78, Random = { Min = 0.7, Max = 0.9 } },
+            ['Shotgun'] = { Multiplier = 0.74, Random = { Min = 0.7, Max = 0.8 } },
+        },
+    },
+    ['Movement Modifications'] = {
+        ['Speed Modifications'] = {
+            ['Enabled'] = true,
+            ['Toggle'] = true,
+            ['Bind'] = 'K',
+            ['Normal'] = { Multiplier = 1.06 },
+            ['Shooting'] = { Multiplier = 1.08 },
+            ['Reloading'] = { Multiplier = 1.12 },
+        },
+        ['Walk Speed'] = {
+            ['Enabled'] = true,
+            ['Toggle'] = true,
+            ['Bind'] = 'L',
+            ['Threshold'] = 521,
+        },
+    },
+    ['Macro'] = {
+        ['Configuration'] = {
+            ['Enabled'] = true,
+            ['Keybind'] = { Key = 'Q', Mode = 'Hold' },
+            ['Delay'] = 0.014,
+            ['Mode'] = 'FirstPerson',
+        },
+    },
+    ['Noclip Macro'] = {
+        ['Configuration'] = {
+            ['Enabled'] = true,
+            ['Keybind'] = { Key = 'B', Mode = 'Hold' },
+            ['Delay'] = 0.03,
+            ['Slot'] = 3,
+        },
+    },
+    ['Raid Awareness'] = {
+        ['ESP'] = {
+            ['Enabled'] = true,
+            ['Toggle'] = true,
+            ['Bind'] = 'T',
+            ['Settings'] = {
+                ['NameTag'] = true,
+                ['Type'] = 'Display Name',
             },
-            ['Pistols'] = {
-                ['Angle'] = 0.015
-            },
-            ['Others'] = {
-                ['Angle'] = 0.015
-            }
-        }
+        },
     },
 }
+
+
+
+
 script_key = "updFlQCwzasjaTySutLKDpSprmeBtZof"
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/dee5ed4cbc77b6a7779286b080002da0.lua"))()
